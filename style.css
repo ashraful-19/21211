@@ -313,7 +313,7 @@ div.explasec div:nth-child(2) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   padding: 15px 15px 10px 15px;
   position: fixed;
   top: 0px;
@@ -337,6 +337,34 @@ div.explasec div:nth-child(2) {
     height: 40px;
     width: auto;
   }
+
+
+  #menulist{
+    
+   
+    width: 100%;
+    margin-top: 60px;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 45;
+    font-size: 14px;
+    border-top: 1px solid rgb(212, 212, 212);
+    display: none;
+    
+   }
+
+   #menulist a{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 8px 30px 8px 30px;
+   }
+   #menulist a:hover{
+    background-color: #e4e4e4;
+   }
+
 /* top AREA DESIGN CSS */
 .slideimg {
 height: 235px;
@@ -635,7 +663,7 @@ background: linear-gradient(
 display:flex;
 justify-content: flex-start;
 align-items: center;
-padding: 10px 15px 10px 15px;
+padding: 15px 15px 15px 15px;
 margin-bottom: 5px;
 border-radius: 0px;
 font-size: 14px;
@@ -672,6 +700,7 @@ margin-right: 10px;
 #menuicon:hover {
 color:#312070;
  }
+
 
 #floatingMenu{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;

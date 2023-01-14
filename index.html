@@ -103,7 +103,7 @@
 				<div class="collapsible-header no-shadows "><img src="https://cdn-icons-png.flaticon.com/512/901/901112.png" class="icon">&nbsp;&nbsp;PPDT</div>
 				<div class="collapsible-body no-shadows body-pad">
 					<a href="/ppdt/video"><div class="itema">Lesson Video</div></a>
-					<a href="practice_ppdt"><div class="itema">Practice PPDT</div></a>
+					<a href="/practice_ppdt"><div class="itema">Practice PPDT</div></a>
 				  </div>
 			  </li>
 			  
@@ -357,12 +357,25 @@
 
  <!-- TOP section -->
 
- <section class="top-nav"><div id="top-nav-left">
+ <section class="top-nav">
+
+	<div onclick="slideToggle()" id="top-nav-left">
 	<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="30" width="30" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
  </div>
 <div>
 	<a id="militarian"	href="index.html"><h3>Militarian</h3></a>
-</div></section>
+</div>
+</section>
+<div id="menulist" >
+	<a href="index.html">Home</a>
+	<a href="login.html">Login</a>
+	<a href="signup.html">Signup</a>
+	<a href="about.html">About</a>
+	<a href="contact.html">Contact</a>
+	<a href="termandcondition.html">Terms & conditions</a>
+	<a href="policy.html">Policy</a>
+
+</div>
  <section class="top-section">
 	<div class="banner">
 		 <div>
@@ -682,8 +695,28 @@
       </a>
     </nav>
 </section>
+
   </body>
+
+
+
+
   <script src="./script.js"></script>
   <!-- Jquery Cnd minified -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </html>
+
+
+<!-- <script>	
+		$('body').click(function(){
+    $('#menulist').hide();
+
+})
+</script> -->
+<script>
+	function slideToggle() {
+    $("#menulist").fadeToggle(100);
+
+
+}  
+</script>
